@@ -8,7 +8,11 @@ import Typography from '@mui/material/Typography';
 interface Crypto {
     id?: string,
     name?: string,
-    total_volume?: number
+    total_volume?: number,
+    symbol?: string,
+    image?: string,
+    price_change_percentage_24h?: number,
+    market_cap_rank?: number
 }
 
 function CryptoList() {
@@ -32,16 +36,22 @@ function CryptoList() {
     }, [state, initial])
     return (
         <>
-            {state.map( coin => <div><Accordion>
+            <h2 className='header'>Top 10 Cryptocurrencies by Market Cap</h2>
+            {state.map( coin => <Accordion className='coin'>
                 <AccordionSummary expandIcon={expandAccordionIcon}>
-                    <Typography>{coin.name}</Typography>
+                    <Typography>{coin.market_cap_rank}. <img className='coinImage' src={coin.image}></img>&nbsp;{coin.name} ({coin.symbol})</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Total Volume: {coin.total_volume}
+                        <table>
+                            <tr><td>Total Volume:</td><td>{coin.total_volume}</td></tr>
+                            <tr><td>Price Change Percentage (Last 24 Hours):</td>
+                            <td><span className={coin.price_change_percentage_24h!! < 0 ? 'negative' : 'positive'}>{coin.price_change_percentage_24h}%</span></td>
+                            </tr>
+                        </table>
                     </Typography>
                 </AccordionDetails>
-            </Accordion></div>)}
+            </Accordion>)}
             
         </>
     )

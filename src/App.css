@@ -1,0 +1,20 @@
+.coin, .header {
+  margin-left: 30%;
+}
+
+.coin {
+  width: 600px;
+}
+
+.coinImage {
+  height: 18px;
+  width: 18px;
+}
+
+.negative {
+  color: red;
+}
+
+.positive {
+  color: green
+}
