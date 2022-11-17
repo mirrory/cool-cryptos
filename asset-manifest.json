@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cool-cryptos/static/css/main.4e4ea5af.css",
+    "main.js": "/cool-cryptos/static/js/main.74ff08a6.js",
+    "static/js/787.affd1133.chunk.js": "/cool-cryptos/static/js/787.affd1133.chunk.js",
+    "index.html": "/cool-cryptos/index.html",
+    "main.4e4ea5af.css.map": "/cool-cryptos/static/css/main.4e4ea5af.css.map",
+    "main.74ff08a6.js.map": "/cool-cryptos/static/js/main.74ff08a6.js.map",
+    "787.affd1133.chunk.js.map": "/cool-cryptos/static/js/787.affd1133.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e4ea5af.css",
+    "static/js/main.74ff08a6.js"
+  ]
+}
