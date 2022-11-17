@@ -18,3 +18,7 @@
 .positive {
   color: green
 }
+
+td {
+  text-align: right;
+}
